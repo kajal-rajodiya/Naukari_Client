@@ -24,7 +24,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login setUser={setUser} />} />
-          <Route path="/jobs" element={user ? <Jobs /> : <Login setUser={setUser} />} />
+          {/* <Route path="/jobs" element={user ? <Jobs /> : <Login setUser={setUser} />} /> */}
+          <Route path='/jobs' element={<Jobs />}/>
           <Route path="/profile" element={user ? <Profile /> : <Login setUser={setUser} />} />
           <Route path="/applied" element={user ? <Applied /> : <Login setUser={setUser} />} />
         </Routes>
